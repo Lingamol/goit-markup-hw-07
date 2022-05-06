@@ -531,7 +531,7 @@ body {
 .social-list__link:focus {
   background: #2196f3;
 }
-.footer-form-label {
+.subscribe-form__label {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -542,7 +542,7 @@ body {
 
   color: #ffffff;
 }
-.footer-form-email {
+.subscribe-form__email {
   padding: 15px 16px;
   margin-right: 12px;
   width: 358px;
@@ -555,10 +555,10 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-form-email:focus {
+.subscribe-form__email:focus {
   border-color: var(--accent-color);
 }
-.footer-form-email::placeholder {
+.subscribe-form__email::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -566,11 +566,11 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-form-position {
+.subscribe-form__position {
   display: flex;
   flex-direction: row;
 }
-.footer-form-but {
+.subscribe-form__but {
   display: flex;
   align-items: center;
   padding-left: 29px;
@@ -579,7 +579,7 @@ body {
   padding-bottom: 10px;
 }
 
-.footer-form-but-icon {
+.subscribe-form__icon {
   margin-left: 10px;
   fill: var(--white-text-color);
 }
@@ -731,7 +731,7 @@ body {
   padding-right: 8px; */
   transition: transform 600ms, opacity 2000ms;
 }
-.modal-button {
+.button-close {
   padding: 0;
   position: absolute;
   top: 8px;
@@ -746,14 +746,14 @@ body {
   align-items: center;
   background-color: transparent;
 }
-.modal-button-icon {
+.button-close__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
+.button-close:hover .button-close__icon,
+.button-close:focus .button-close__icon {
   fill: var(--accent-color);
 }
-.modal-title {
+.modal__title {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -763,20 +763,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-header-color);
 }
-.modal-form {
+.personal-form__form-field {
   margin-right: auto;
   margin-left: auto;
 }
 
-.modal-form-field {
+.personal-form__form-field {
   /* outline: 1px solid blue; */
   margin-bottom: 10px;
 }
 
-.modal-form-field-comment {
+.modal-comment {
   margin-bottom: 20px;
 }
-.modal-form-label {
+.form-field__label,
+.comment__label {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -786,7 +787,7 @@ body {
   color: var(--main-text-color);
 }
 
-.form-input {
+.form-field__input {
   width: 100%;
   height: 40px;
   display: block;
@@ -801,16 +802,16 @@ body {
 }
 /* .form-input:hover,
 .modal-form-comment:hover, */
-.form-input:focus,
-.modal-form-comment:focus {
+.form-field__input:focus,
+.comment__input:focus {
   border-color: var(--accent-color);
 }
 /* .form-input:hover + .icon, */
-.form-input:focus + .icon {
+.form-field__input:focus + .form-field__icon {
   fill: var(--accent-color);
 }
 
-.modal-form-comment {
+.comment__input {
   padding: 12px 16px;
   height: 120px;
   width: 100%;
@@ -821,7 +822,7 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-comment::placeholder {
+.comment__input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -829,10 +830,10 @@ body {
 
   color: rgba(117, 117, 117, 0.5);
 }
-.field-wrapper {
+.form-field__wrapper {
   position: relative;
 }
-.icon {
+.form-field__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -851,13 +852,13 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
-.agreement {
+.agreement__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.agreement-two {
+.agreement__two {
   color: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -872,7 +873,7 @@ body {
   width: 100%;
   margin-bottom: 30px;
 }
-.agreement-checkbox:focus + .agreement-check-field .agreement-check-box {
+.agreement__checkbox:focus + .agreement-check-field .agreement-check-box {
   border-color: var(--accent-color);
 }
 .agreement-check-box {
@@ -900,13 +901,13 @@ body {
   margin-right: 7px;
 } 
 */
-.agreement-checkbox:checked + .agreement-check-field .icon-checked {
+.agreement__checkbox:checked + .agreement-check-field .icon-checked {
   fill: var(--accent-color);
 }
-.agreement-checkbox:checked + .agreement-check-field .agreement-check-box {
+.agreement__checkbox:checked + .agreement-check-field .agreement-check-box {
   border: none;
 }
-.agreement-accent {
+.agreement-wrapper {
   position: relative;
 }
 .agreement-two::after {
