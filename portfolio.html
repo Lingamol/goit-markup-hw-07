@@ -20,46 +20,48 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container header-flex">
-        <nav class="header-nav">
-          <a class="header-logo link-decoration" href="index.html"
-            ><span class="header-logo-fp" lang="en">Web</span
-            ><span class="header-logo-sp" lang="en">Studio</span></a
-          >
-          <ul class="header-nav-list list-decoration">
-            <li class="header-nav-list-item">
-              <a class="nav-link link-decoration" href="index.html">Студия</a>
+      <div class="container">
+        <div class="header__flex">
+          <nav class="header__nav">
+            <a class="logo link-decoration" href="index.html"
+              ><span class="logo__fp" lang="en">Web</span
+              ><span class="logo__sp" lang="en">Studio</span></a
+            >
+            <ul class="nav-list list-decoration">
+              <li class="nav-list__item">
+                <a class="nav-list__link link-decoration" href="index.html">Студия</a>
+              </li>
+              <li class="nav-list__item">
+                <a
+                  class="nav-list__link link-decoration nav-list__link--curent"
+                  href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link link-decoration" href="index.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list list-decoration">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link link-decoration" href="mailto:info@devstudio.com"
+                ><svg class="contacts-list__icon contacts-list__icon--envelope-icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-nav-list-item">
-              <a class="nav-link link-decoration curent-page" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-nav-list-item">
-              <a class="nav-link link-decoration" href="index.html">Контакты</a>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link link-decoration" href="tel:+380961111111"
+                ><svg class="contacts-list__icon contacts-list__icon--smartphone-icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts-list list-decoration">
-          <li class="header-contacts-list-item">
-            <a
-              class="header-contacts-list-item-link header-contacts-list-mail link-decoration nav-link"
-              href="mailto:info@devstudio.com"
-              ><svg class="header-contacts-list-item-linkicon envelope-icon">
-                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts-list-item">
-            <a
-              class="header-contacts-list-item-link header-contacts-list-tel link-decoration nav-link"
-              href="tel:+380961111111"
-              ><svg class="header-contacts-list-item-linkicon smartphone-icon">
-                <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- main content portfolio -->
