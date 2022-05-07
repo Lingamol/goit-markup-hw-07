@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2f303a;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.footer__contacts {
+    flex-grow: 1;
+    margin-right: 70px;
+}
