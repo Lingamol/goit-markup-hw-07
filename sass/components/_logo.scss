@@ -1,6 +1,6 @@
 .logo {
     display: block;
-    font-family: 'Raleway';
+    font-family: var(--second-font);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -15,7 +15,7 @@
     margin-bottom: 20px;
 }
 .logo__sp--dark {
-    color: #000000;;
+    color: #000000;
 }
 .logo__sp--inverse {
     color: var(--white-text-color);

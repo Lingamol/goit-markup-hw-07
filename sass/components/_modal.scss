@@ -14,10 +14,7 @@
     visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-    transform: rotate(0) scale(0.3);
-    opacity: 0.1;
-}
+
 
 .modal {
     position: absolute;
@@ -28,10 +25,12 @@
     min-height: 581px;
     transform: rotate(360deg) translate(-50%, -50%) scale(1);
     border-radius: 4px;
-    background: #ffffff;
-    /* padding-top: 8px;
-  padding-right: 8px; */
+    background: $white-bg-color;
     transition: transform 600ms, opacity 2000ms;
+    .backdrop.is-hidden & {
+            transform: rotate(0) scale(0.3);
+            opacity: 0.1;
+        }
 }
 .modal__title {
     margin-top: 0;
